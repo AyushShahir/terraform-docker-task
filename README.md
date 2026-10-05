@@ -1,95 +1,276 @@
-# Terraform Docker Infrastructure
+🚀 Terraform Docker Infrastructure
 
-## DevOps Internship - Task 3
+🎓 DevOps Internship — Task 3
 
-This project demonstrates Infrastructure as Code (IaC) using Terraform to provision a local Docker container.
+This project demonstrates Infrastructure as Code (IaC) using Terraform to provision and manage a local Docker container running NGINX.
 
-## Objective
+🎯 Objective
 
-Provision a local Docker container using Terraform.
+The objective of this task is to:
 
-## Technologies Used
+🏗️ Understand the concept of Infrastructure as Code (IaC)
 
-- Terraform
-- Docker
-- NGINX
-- Git & GitHub
+⚙️ Use Terraform to define infrastructure
 
-## Architecture
+🐳 Provision a Docker container using Terraform
 
-```text
-Terraform
-    |
-    v
-Docker Provider
-    |
-    v
-Docker Image (NGINX)
-    |
-    v
-Docker Container
-    |
-    v
-localhost:8081
-Terraform Workflow
-```
+🔄 Understand the Terraform workflow
 
-## The following Terraform commands were used:
+🧹 Provision and destroy infrastructure using code
 
-terraform init,
-terraform fmt,
-terraform validate,
-terraform plan,
-terraform apply,
-terraform state list,
+🛠️ Technologies Used
+
+🟣 Terraform
+
+🐳 Docker
+
+🌐 NGINX
+
+🐙 Git
+
+☁️ GitHub
+
+🏗️ Architecture
+
+                 Terraform
+                     │
+                     ▼
+              Docker Provider
+                     │
+                     ▼
+             NGINX Docker Image
+                     │
+                     ▼
+             Docker Container
+             (terraform-nginx)
+                     │
+                     ▼
+              localhost:8081
+
+📁 Project Structure
+
+terraform-docker-iac-task/
+│
+├── 📄 main.tf
+├── 📄 README.md
+├── 📄 .gitignore
+├── 📄 .terraform.lock.hcl
+│
+└── 📁 screenshots/
+    ├── terraform-plan.png
+    ├── terraform-apply.png
+    ├── docker-ps.png
+    ├── nginx-browser.png
+    ├── terraform-state.png
+    └── terraform-destroy.png
+
+🔒 Terraform state files and the .terraform directory are excluded from Git using .gitignore.
+
+🔄 Terraform Workflow
+
+The following Terraform commands were used during the task:
+
+1️⃣ Initialize Terraform
+
+terraform init
+
+Initializes the Terraform working directory and downloads the required provider.
+
+2️⃣ Format the Configuration
+
+terraform fmt
+
+Formats the Terraform configuration file according to standard formatting.
+
+3️⃣ Validate the Configuration
+
+terraform validate
+
+Checks whether the Terraform configuration is syntactically valid and correctly configured.
+
+4️⃣ Preview Infrastructure Changes
+
+terraform plan
+
+Creates an execution plan showing what Terraform will create, modify, or destroy.
+
+5️⃣ Create the Infrastructure
+
+terraform apply
+
+Applies the Terraform configuration and creates the required Docker resources.
+
+6️⃣ Check Terraform State
+
+terraform state list
+
+Displays the resources currently tracked by Terraform.
+
+7️⃣ Destroy the Infrastructure
+
 terraform destroy
 
-## Resources Created
+Removes the infrastructure managed by Terraform.
+
+🐳 Resources Created
 
 Terraform created two resources:
 
-NGINX Docker image
-NGINX Docker container
+🖼️ NGINX Docker Image
 
-## The container was named:
+📦 NGINX Docker Container
+
+📦 Container Details
+
+Property
+
+Value
+
+Container Name
 
 terraform-nginx
 
-The container's port 80 was mapped to port 8081 on the host.
+Container Image
 
-The application was accessed using:
+nginx:latest
+
+Internal Port
+
+80
+
+Host Port
+
+8081
+
+Access URL
 
 http://localhost:8081
-Terraform State
 
-## The following resources were tracked by Terraform:
+🌐 Application Verification
 
-docker_container.nginx
-docker_image.nginx
-Verification
-
-The Docker container was verified using:
+After running terraform apply, the NGINX container was verified using:
 
 docker ps
 
-Terraform resources were verified using:
+The application was then accessed through:
+
+http://localhost:8081
+
+The NGINX welcome page confirmed that the container was running successfully. ✅
+
+🗂️ Terraform State
+
+Terraform maintains a state file to keep track of the infrastructure it manages.
+
+The following resources were tracked:
+
+docker_container.nginx
+docker_image.nginx
+
+They were verified using:
 
 terraform state list
-Cleanup
 
-After verification, the infrastructure was removed using:
+🧹 Cleanup
+
+After completing the verification, the infrastructure was removed using:
+
 terraform destroy
 
-This successfully removed the Terraform-managed Docker image and container.
+This successfully removed the Terraform-managed Docker resources. ✅
 
-## Key Concepts Learned
-Infrastructure as Code (IaC)
-Terraform providers
-Terraform resources
-Terraform state
+📸 Screenshots
+
+The project includes screenshots demonstrating the execution and verification of the Terraform workflow.
+
+📋 Terraform Plan
+
+Shows the resources Terraform planned to create.
+
+🚀 Terraform Apply
+
+Shows the successful creation of the Docker image and container.
+
+🐳 Docker Container
+
+Shows the running terraform-nginx container using:
+
+docker ps
+
+🌐 NGINX Application
+
+Shows the NGINX application running at:
+
+http://localhost:8081
+
+🗂️ Terraform State
+
+Shows the resources tracked by Terraform using:
+
+terraform state list
+
+🧹 Terraform Destroy
+
+Shows the successful removal of the Terraform-managed infrastructure.
+
+🧠 Key Concepts Learned
+
+Through this task, I learned:
+
+🏗️ Infrastructure as Code (IaC)
+
+🔌 Terraform Providers
+
+📦 Terraform Resources
+
+🗂️ Terraform State
+
+⚙️ terraform init
+
+✨ terraform fmt
+
+✅ terraform validate
+
+🔍 terraform plan
+
+🚀 terraform apply
+
+📋 terraform state list
+
+🧹 terraform destroy
+
+🐳 Docker container provisioning using Terraform
+
+💡 What I Learned
+
+This task helped me understand how infrastructure can be defined and managed using code instead of manually configuring resources.
+
+I also learned the complete Terraform workflow:
+
+Write Configuration
+       ↓
 terraform init
+       ↓
+terraform fmt
+       ↓
 terraform validate
+       ↓
 terraform plan
+       ↓
 terraform apply
+       ↓
+Verify Resources
+       ↓
+terraform state list
+       ↓
 terraform destroy
-Docker and container provisioning using Terraform
+
+🎓 Internship Task
+
+DevOps Internship — Task 3
+
+Infrastructure as Code (IaC) with Terraform
+
+🚀 Successfully provisioned a local Docker container using Terraform and verified the deployment using Docker and Terraform commands.
+
+⭐ Built as part of my DevOps learning journey.
