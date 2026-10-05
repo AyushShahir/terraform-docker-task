@@ -48,6 +48,7 @@ The objective of this task is to:
               localhost:8081
 
 ## 📁 Project Structure
+```text
 
 terraform-docker-iac-task/
 │
@@ -63,6 +64,7 @@ terraform-docker-iac-task/
     ├── nginx-browser.png
     ├── terraform-state.png
     └── terraform-destroy.png
+```
 
 ## 🔒 Terraform state files and the .terraform directory are excluded from Git using .gitignore.
 
