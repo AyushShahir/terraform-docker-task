@@ -1,24 +1,24 @@
-🚀 Terraform Docker Infrastructure
+## 🚀 Terraform Docker Infrastructure
 
-🎓 DevOps Internship — Task 3
+## 🎓 DevOps Internship — Task 3
 
 This project demonstrates Infrastructure as Code (IaC) using Terraform to provision and manage a local Docker container running NGINX.
 
-🎯 Objective
+## 🎯 Objective
 
 The objective of this task is to:
 
-🏗️ Understand the concept of Infrastructure as Code (IaC)
+## 🏗️ Understand the concept of Infrastructure as Code (IaC)
 
-⚙️ Use Terraform to define infrastructure
+## ⚙️ Use Terraform to define infrastructure
 
-🐳 Provision a Docker container using Terraform
+## 🐳 Provision a Docker container using Terraform
 
-🔄 Understand the Terraform workflow
+## 🔄 Understand the Terraform workflow
 
-🧹 Provision and destroy infrastructure using code
+## 🧹 Provision and destroy infrastructure using code
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 🟣 Terraform
 
@@ -30,7 +30,7 @@ The objective of this task is to:
 
 ☁️ GitHub
 
-🏗️ Architecture
+## 🏗️ Architecture
 
                  Terraform
                      │
@@ -47,7 +47,7 @@ The objective of this task is to:
                      ▼
               localhost:8081
 
-📁 Project Structure
+## 📁 Project Structure
 
 terraform-docker-iac-task/
 │
@@ -64,9 +64,9 @@ terraform-docker-iac-task/
     ├── terraform-state.png
     └── terraform-destroy.png
 
-🔒 Terraform state files and the .terraform directory are excluded from Git using .gitignore.
+## 🔒 Terraform state files and the .terraform directory are excluded from Git using .gitignore.
 
-🔄 Terraform Workflow
+## 🔄 Terraform Workflow
 
 The following Terraform commands were used during the task:
 
@@ -112,7 +112,7 @@ terraform destroy
 
 Removes the infrastructure managed by Terraform.
 
-🐳 Resources Created
+## 🐳 Resources Created
 
 Terraform created two resources:
 
@@ -146,7 +146,7 @@ Access URL
 
 http://localhost:8081
 
-🌐 Application Verification
+## 🌐 Application Verification
 
 After running terraform apply, the NGINX container was verified using:
 
@@ -158,7 +158,7 @@ http://localhost:8081
 
 The NGINX welcome page confirmed that the container was running successfully. ✅
 
-🗂️ Terraform State
+## 🗂️ Terraform State
 
 Terraform maintains a state file to keep track of the infrastructure it manages.
 
@@ -171,7 +171,7 @@ They were verified using:
 
 terraform state list
 
-🧹 Cleanup
+## 🧹 Cleanup
 
 After completing the verification, the infrastructure was removed using:
 
@@ -179,7 +179,7 @@ terraform destroy
 
 This successfully removed the Terraform-managed Docker resources. ✅
 
-📸 Screenshots
+## 📸 Screenshots
 
 The project includes screenshots demonstrating the execution and verification of the Terraform workflow.
 
@@ -213,7 +213,7 @@ terraform state list
 
 Shows the successful removal of the Terraform-managed infrastructure.
 
-🧠 Key Concepts Learned
+## 🧠 Key Concepts Learned
 
 Through this task, I learned:
 
@@ -241,7 +241,7 @@ Through this task, I learned:
 
 🐳 Docker container provisioning using Terraform
 
-💡 What I Learned
+## 💡 What I Learned
 
 This task helped me understand how infrastructure can be defined and managed using code instead of manually configuring resources.
 
@@ -265,7 +265,7 @@ terraform state list
        ↓
 terraform destroy
 
-🎓 Internship Task
+## 🎓 Internship Task
 
 DevOps Internship — Task 3
 
