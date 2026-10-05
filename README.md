@@ -36,21 +36,22 @@ Terraform Workflow
 
 ## The following Terraform commands were used:
 
-terraform init
-terraform fmt
-terraform validate
-terraform plan
-terraform apply
-terraform state list
+terraform init,
+terraform fmt,
+terraform validate,
+terraform plan,
+terraform apply,
+terraform state list,
 terraform destroy
-Resources Created
+
+## Resources Created
 
 Terraform created two resources:
 
 NGINX Docker image
 NGINX Docker container
 
-The container was named:
+## The container was named:
 
 terraform-nginx
 
@@ -61,7 +62,7 @@ The application was accessed using:
 http://localhost:8081
 Terraform State
 
-The following resources were tracked by Terraform:
+## The following resources were tracked by Terraform:
 
 docker_container.nginx
 docker_image.nginx
@@ -77,7 +78,6 @@ terraform state list
 Cleanup
 
 After verification, the infrastructure was removed using:
-
 terraform destroy
 
 This successfully removed the Terraform-managed Docker image and container.
