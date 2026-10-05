@@ -8,15 +8,15 @@ This project demonstrates Infrastructure as Code (IaC) using Terraform to provis
 
 The objective of this task is to:
 
-## 🏗️ Understand the concept of Infrastructure as Code (IaC)
+🏗️ Understand the concept of Infrastructure as Code (IaC)
 
-## ⚙️ Use Terraform to define infrastructure
+⚙️ Use Terraform to define infrastructure
 
-## 🐳 Provision a Docker container using Terraform
+🐳 Provision a Docker container using Terraform
 
-## 🔄 Understand the Terraform workflow
+🔄 Understand the Terraform workflow
 
-## 🧹 Provision and destroy infrastructure using code
+🧹 Provision and destroy infrastructure using code
 
 ## 🛠️ Technologies Used
 
